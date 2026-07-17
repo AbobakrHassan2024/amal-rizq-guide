@@ -1,41 +1,644 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>منهج عملي لبناء تجربة عميل احترافية داخل المؤسسات</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="5DuOj3wPkaj9HuS7-9gwkLBb1t-rkv1OGxbuPh2enGo">
+<title>الدليل العلمي لإنشاء وإدارة خدمة العملاء | أمل رزق</title>
 
-    <!-- SEO -->
-    <meta name="description" content="كتاب منهج عملي لبناء تجربة عميل احترافية داخل المؤسسات، تأليف أمل رزق. دليل شامل لتحسين تجربة العميل وخدمة العملاء وإدارة الجودة.">
+<meta name="google-site-verification" content="5DuOj3wPkaj9HuS7-9gwkLBb1t-rkv1OGxbuPh2enGo">
 
-    <meta name="keywords" content="منهج عملي لبناء تجربة عميل احترافية داخل المؤسسات, أمل رزق, Amal Rizq, تجربة العميل, خدمة العملاء, CRM, Customer Experience, Customer Service">
+<meta name="description" content="الدليل العلمي لإنشاء وإدارة خدمة العملاء - تأليف أمل رزق. دليل عملي لبناء وتطوير أقسام خدمة العملاء وتحسين تجربة العميل داخل المؤسسات.">
 
-    <meta name="robots" content="index, follow">
+<meta name="keywords" content="الدليل العلمي لإنشاء وإدارة خدمة العملاء، أمل رزق، خدمة العملاء، إدارة خدمة العملاء، تجربة العميل، CRM">
 
-    <link rel="canonical" href="https://abobakrh.com/">
+<meta name="robots" content="index,follow">
 
-    <!-- إعادة التوجيه بعد 5 ثوان -->
-    <meta http-equiv="refresh" content="5;url=https://payhip.com/b/cELCk">
+<link rel="canonical" href="https://abobakrhassan2024.github.io/amal-rizq-guide/">
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap');
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Tajawal',Tahoma,Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+
+body{
+background:#f8fafc;
+color:#1e293b;
+line-height:1.8;
+}
+
+
+/* ===== NAVBAR ===== */
+
+header{
+position:sticky;
+top:0;
+z-index:999;
+background:white;
+box-shadow:0 5px 25px #0001;
+}
+
+
+.navbar{
+max-width:1200px;
+margin:auto;
+padding:15px 25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+
+.logo{
+font-size:22px;
+font-weight:900;
+color:#1d4ed8;
+}
+
+
+.nav-links{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+
+.nav-links a{
+text-decoration:none;
+color:#334155;
+font-weight:bold;
+}
+
+
+.menu-icon{
+display:none;
+font-size:30px;
+color:#2563eb;
+cursor:pointer;
+}
+
+
+/* ===== HERO ===== */
+
+.hero{
+background:linear-gradient(135deg,#0f172a,#2563eb);
+color:white;
+padding:80px 20px;
+}
+
+
+.hero-container{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 350px;
+gap:50px;
+align-items:center;
+}
+
+
+.hero h1{
+font-size:45px;
+line-height:1.5;
+}
+
+
+.hero p{
+font-size:20px;
+margin:25px 0;
+color:#e2e8f0;
+}
+
+
+.book-image img{
+width:100%;
+border-radius:20px;
+box-shadow:0 25px 50px #0005;
+}
+
+
+.btn{
+display:inline-block;
+background:#f59e0b;
+color:#111;
+padding:15px 40px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+transition:.3s;
+}
+
+
+.btn:hover{
+background:#fbbf24;
+transform:translateY(-3px);
+}
+
+
+/* ===== CONTENT ===== */
+
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:60px 20px;
+}
+
+
+.section{
+background:white;
+padding:40px;
+border-radius:25px;
+margin-bottom:35px;
+box-shadow:0 10px 30px #0001;
+}
+
+
+.title{
+text-align:center;
+color:#2563eb;
+font-size:32px;
+margin-bottom:25px;
+}
+
+
+.section p{
+font-size:18px;
+text-align:justify;
+}
+
+
+/* ===== AUTHOR ===== */
+
+.author{
+display:flex;
+gap:30px;
+align-items:center;
+}
+
+
+.avatar{
+width:100px;
+height:100px;
+border-radius:50%;
+background:#2563eb;
+color:white;
+font-size:45px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+
+/* ===== FEATURES ===== */
+
+.features{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+
+.feature{
+background:#eff6ff;
+padding:25px;
+border-radius:18px;
+text-align:center;
+font-weight:bold;
+}
+
+
+
+/* ===== CONTACT ===== */
+
+.contact{
+text-align:center;
+}
+
+
+/* ===== WHATSAPP ===== */
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+left:25px;
+width:65px;
+height:65px;
+border-radius:50%;
+background:#25d366;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+text-decoration:none;
+z-index:999;
+}
+
+
+
+/* ===== FOOTER ===== */
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+
+footer a{
+color:#fbbf24;
+text-decoration:none;
+font-weight:bold;
+}
+
+
+/* ===== MOBILE ===== */
+
+
+@media(max-width:850px){
+
+.menu-icon{
+display:block;
+}
+
+
+.nav-links{
+
+display:none;
+position:absolute;
+top:70px;
+right:0;
+width:100%;
+background:white;
+flex-direction:column;
+text-align:center;
+padding:25px;
+}
+
+
+.nav-links.active{
+display:flex;
+}
+
+
+.hero-container{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+
+.hero h1{
+font-size:30px;
+}
+
+
+.features{
+grid-template-columns:1fr;
+}
+
+
+.author{
+display:block;
+text-align:center;
+}
+
+
+.avatar{
+margin:auto;
+margin-bottom:20px;
+}
+
+
+}
+
+</style>
+
 </head>
 
-<body style="font-family:Tahoma,Arial,sans-serif;text-align:center;padding:60px;direction:rtl">
 
-    <h1>منهج عملي لبناء تجربة عميل احترافية داخل المؤسسات</h1>
+<body>
 
-    <p><strong>تأليف: أمل رزق</strong></p>
 
-    <p>سيتم تحويلك تلقائيًا إلى صفحة الكتاب خلال 5 ثوانٍ.</p>
+<header>
 
-    <p>
-        إذا لم يتم التحويل،
-        <a href="https://payhip.com/b/cELCk">
-            اضغط هنا للانتقال إلى صفحة الكتاب.
-        </a>
-    </p>
+<nav class="navbar">
+
+<div class="logo">
+📘 الدليل العلمي لخدمة العملاء
+</div>
+
+
+<div class="menu-icon" onclick="toggleMenu()">
+☰
+</div>
+
+
+<ul class="nav-links" id="menu">
+
+<li><a href="#home" onclick="closeMenu()">الرئيسية</a></li>
+
+<li><a href="#book" onclick="closeMenu()">عن الكتاب</a></li>
+
+<li><a href="#author" onclick="closeMenu()">المؤلفة</a></li>
+
+<li><a href="#features" onclick="closeMenu()">المميزات</a></li>
+
+<li><a href="#contact" onclick="closeMenu()">التواصل</a></li>
+
+</ul>
+
+
+</nav>
+
+</header>
+
+
+<section class="hero" id="home">
+
+<div class="hero-container">
+
+
+<div>
+
+<h1>
+الدليل العلمي لإنشاء وإدارة خدمة العملاء
+</h1>
+
+
+<p>
+منهج عملي وعلمي لبناء أقسام خدمة عملاء احترافية وتطوير تجربة العميل داخل المؤسسات.
+</p>
+
+
+<a class="btn" href="https://payhip.com/b/cELCk">
+شراء الكتاب الآن
+</a>
+
+
+</div>
+
+
+<div class="book-image">
+
+<img src="book-cover.jpg" alt="غلاف الكتاب">
+
+</div>
+
+
+</div>
+
+</section>
+<div class="container">
+
+
+<section class="section" id="book">
+
+<h2 class="title">
+عن الكتاب
+</h2>
+
+<p>
+يقدم كتاب 
+<strong>
+الدليل العلمي لإنشاء وإدارة خدمة العملاء
+</strong>
+منهجًا عمليًا وعلميًا يساعد المؤسسات على تأسيس وإدارة أقسام خدمة العملاء بكفاءة، من خلال بناء الأنظمة التشغيلية، وتصميم الأدلة الإجرائية، وتطوير فرق العمل، وقياس جودة الخدمة وتحسين تجربة العميل.
+
+</p>
+
+<p>
+يهدف الكتاب إلى مساعدة القادة والموظفين على بناء بيئة خدمة احترافية تحقق رضا العملاء وترفع مستوى الأداء المؤسسي وفق أفضل الممارسات الحديثة.
+</p>
+
+</section>
+
+
+
+
+<section class="section" id="author">
+
+
+<h2 class="title">
+عن المؤلفة
+</h2>
+
+
+<div class="author">
+
+
+<div class="avatar">
+أ
+</div>
+
+
+<p>
+
+<strong>
+أمل رزق القارح
+</strong>
+
+<br><br>
+
+متخصصة في تطوير وإدارة أقسام خدمة العملاء، تمتلك خبرة عملية تمتد لأكثر من عشر سنوات في بناء الأنظمة التشغيلية، وتصميم الأدلة الإجرائية، وتطوير فرق العمل في قطاعات التجزئة والخدمات وعيادات التجميل.
+
+<br><br>
+
+شاركت في تأسيس وتطوير عدة أقسام لخدمة العملاء في منشآت متنوعة، وأسهمت في رفع مؤشرات رضا العملاء وتحسين جودة الخدمة من خلال تطبيق أفضل الممارسات العالمية وتطوير مهارات العاملين.
+
+<br><br>
+
+تهتم المؤلفة ببناء بيئات عمل مستدامة وتعزيز ثقافة خدمة العملاء داخل المؤسسات، وتقديم حلول عملية تساعد القادة والموظفين على تحقيق تجربة عميل متميزة.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="section" id="features">
+
+
+<h2 class="title">
+مميزات الكتاب
+</h2>
+
+
+
+<div class="features">
+
+
+<div class="feature">
+🏢
+<br>
+إنشاء قسم خدمة عملاء احترافي
+</div>
+
+
+<div class="feature">
+⚙️
+<br>
+تصميم الأنظمة والإجراءات التشغيلية
+</div>
+
+
+<div class="feature">
+👥
+<br>
+تطوير مهارات فرق العمل
+</div>
+
+
+<div class="feature">
+⭐
+<br>
+تحسين تجربة العميل ورفع الرضا
+</div>
+
+
+<div class="feature">
+📊
+<br>
+قياس جودة الخدمة ومؤشرات الأداء
+</div>
+
+
+<div class="feature">
+🚀
+<br>
+بناء ثقافة خدمة مستدامة
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="section contact" id="contact">
+
+
+<h2 class="title">
+تواصل مع المؤلفة
+</h2>
+
+
+<p>
+للاستفسارات حول الكتاب أو الحصول على نسخة:
+</p>
+
+
+<br>
+
+
+<a class="btn" 
+href="https://wa.me/966551042008"
+target="_blank">
+
+💬 تواصل معنا 
+
+</a>
+
+
+</section>
+
+
+</div>
+
+
+
+
+
+<!-- زر واتساب عائم -->
+
+<a class="whatsapp"
+href="https://wa.me/966551042008"
+target="_blank">
+
+💬
+
+</a>
+
+
+
+
+
+<footer>
+
+
+<p>
+© 2026 جميع الحقوق محفوظة
+</p>
+
+
+<p>
+
+تصميم وبرمجة
+
+<a href="https://wa.me/967735962962" target="_blank">
+
+م. أبوبكر حسان
+
+</a>
+
+</p>
+
+
+</footer>
+
+
+
+
+
+<script>
+
+
+function toggleMenu(){
+
+document
+.getElementById("menu")
+.classList.toggle("active");
+
+}
+
+
+
+function closeMenu(){
+
+document
+.getElementById("menu")
+.classList.remove("active");
+
+}
+
+
+
+</script>
+
 
 </body>
+
 </html>
