@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://abobakrhassan2024.github.io/amal-rizq-guide/sitemap.xml
