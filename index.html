@@ -81,7 +81,7 @@ content="دليل عملي لبناء وتطوير أقسام خدمة العم�
 
 
 <meta property="og:image"
-content="https://abobakrhassan2024.github.io/amal-rizq-guide/cover-share.webp">
+content="https://abobakrhassan2024.github.io/amal-rizq-guide/cover-share.jpg">
 
 
 <meta property="og:url"
@@ -99,7 +99,7 @@ content="الدليل العلمي لإنشاء وإدارة خدمة العمل
 
 
 <meta name="twitter:image"
-content="https://abobakrhassan2024.github.io/amal-rizq-guide/cover-share.webp">
+content="https://abobakrhassan2024.github.io/amal-rizq-guide/cover-share.jpg">
 
 
 
@@ -129,7 +129,7 @@ content="https://abobakrhassan2024.github.io/amal-rizq-guide/cover-share.webp">
 "Customer Service Management",
 
 "image":
-"https://abobakrhassan2024.github.io/amal-rizq-guide/cover-share.webp",
+"https://abobakrhassan2024.github.io/amal-rizq-guide/cover-share.jpg",
 
 "url":
 "https://abobakrhassan2024.github.io/amal-rizq-guide/"
@@ -374,29 +374,49 @@ display:block;
 
 
 .btn{
-
-display:inline-block;
-
-background:
-linear-gradient(
-45deg,
-#f59e0b,
-#facc15
-);
-
-color:#111;
-
-padding:16px 40px;
-
-border-radius:50px;
-
-font-weight:900;
-
-text-decoration:none;
-
+	display:inline-flex;
+	align-items:center;
+	justify-content:center;
+	gap:8px;
+	background:linear-gradient(45deg,#f59e0b,#facc15);
+	color:#111;
+	padding:16px 40px;
+	border-radius:50px;
+	font-weight:900;
+	text-decoration:none;
+	transition:transform .25s ease, box-shadow .25s ease, filter .25s ease;
+	box-shadow:0 12px 30px rgba(0,0,0,.18);
 }
 
+.btn:hover,
+.btn:focus-visible{
+	transform:translateY(-2px);
+	box-shadow:0 16px 34px rgba(0,0,0,.24);
+	filter:brightness(1.03);
+}
 
+.hero-actions{
+	display:flex;
+	flex-wrap:wrap;
+	gap:14px;
+	margin-top:22px;
+}
+
+.hero-badges{
+	display:flex;
+	flex-wrap:wrap;
+	gap:10px;
+	margin-top:18px;
+}
+
+.hero-badge{
+	background:rgba(255,255,255,.12);
+	border:1px solid rgba(255,255,255,.16);
+	padding:8px 12px;
+	border-radius:999px;
+	font-size:14px;
+	color:#e2e8f0;
+}
 
 .container{
 
@@ -472,7 +492,7 @@ font-size:17px;
 
 .accordion.active .accordion-content{
 
-max-height:700px;
+max-height:2200px;
 
 padding-bottom:25px;
 
@@ -498,33 +518,55 @@ font-size:25px;
 .cards{
 
 display:grid;
-
-grid-template-columns:
-repeat(3,1fr);
-
-gap:20px;
-
+	grid-template-columns:repeat(3,1fr);
+	gap:20px;
 }
-
-
 
 .card{
-
-background:white;
-
-padding:30px;
-
-border-radius:20px;
-
-text-align:center;
-
-box-shadow:
-0 10px 25px #0001;
-
+	background:white;
+	padding:30px;
+	border-radius:20px;
+	text-align:center;
+	box-shadow:0 10px 25px #0001;
+	display:flex;
+	flex-direction:column;
+	gap:12px;
+	align-items:center;
+	transition:transform .25s ease, box-shadow .25s ease;
 }
 
+.card:hover{
+	transform:translateY(-4px);
+	box-shadow:0 16px 30px rgba(0,0,0,.12);
+}
 
+.card img{
+	width:100%;
+	aspect-ratio:3/4;
+	object-fit:cover;
+	border-radius:15px;
+	box-shadow:0 8px 20px #0002;
+}
 
+.card h2,
+.card h3{
+	color:#0f3d91;
+}
+
+/* REVEAL ANIMATION */
+
+.reveal{
+	opacity:0;
+	transform:translateY(24px);
+	transition:opacity .7s ease, transform .7s ease;
+}
+
+.reveal.visible{
+	opacity:1;
+	transform:none;
+}
+
+section[id]{scroll-margin-top:90px;}
 
 /* FLOAT BUTTONS */
 
@@ -641,81 +683,118 @@ display:flex;
 
 
 
-.hero-container{
-
-grid-template-columns:1fr;
-
-text-align:center;
-
+.hero{
+	min-height:auto;
+	padding:70px 0;
 }
 
-
+.hero-container{
+	grid-template-columns:1fr;
+	text-align:center;
+}
 
 .hero h1{
-
-font-size:32px;
-
+	font-size:32px;
+	line-height:1.35;
 }
 
+.hero p{
+	font-size:18px;
+}
 
+.hero-actions{
+	justify-content:center;
+	flex-direction:column;
+	align-items:center;
+}
+
+.hero-badges{
+	justify-content:center;
+}
 
 .cards{
+	grid-template-columns:1fr;
+}
 
-grid-template-columns:1fr;
+.navbar{
+	padding:12px 16px;
+}
+
+.logo{
+	font-size:19px;
+}
+
+.buy-floating,
+.whatsapp{
+	width:58px;
+	height:58px;
+	bottom:18px;
+}
 
 }
 
-
-}
-
-
-</style><body>
+</style>
+<body>
 
 
 <!-- HEADER -->
 
-<header>
+ <header>
 
-<nav class="navbar">
+  <nav class="navbar">
 
-<div class="logo">
-📘 الدليل العلمي <span>لخدمة العملاء</span>
-</div>
+    <div class="logo">
+      📘 الدليل العلمي <span>لخدمة العملاء</span>
+    </div>
 
+    <div class="menu-icon" onclick="toggleMenu()">
+      ☰
+    </div>
 
-<div class="menu-icon" onclick="toggleMenu()">
-☰
-</div>
+    <ul class="nav-links" id="menu">
 
+      <li>
+        <a href="#home" onclick="closeMenu()">الرئيسية</a>
+      </li>
 
-<ul class="nav-links" id="menu">
+      <li>
+        <a href="#content" onclick="closeMenu()">عن الكتاب</a>
+      </li>
 
-<li>
-<a href="#home" onclick="closeMenu()">الرئيسية</a>
-</li>
+      <li>
+        <a href="#achievements" onclick="closeMenu()">الإنجازات</a>
+      </li>
 
-<li>
-<a href="#content" onclick="closeMenu()">محتوى الكتاب</a>
-</li>
+      <li>
+        <a href="#opinions" onclick="closeMenu()">آراء العملاء</a>
+      </li>
 
-<li>
-<a href="#author" onclick="closeMenu()">المؤلفة</a>
-</li>
+      <li>
+        <a href="#samples" onclick="closeMenu()">نماذج الكتاب</a>
+      </li>
 
-<li>
-<a href="#faq" onclick="closeMenu()">الأسئلة</a>
-</li>
+      <li>
+        <a href="#services" onclick="closeMenu()">الخدمات</a>
+      </li>
 
-<li>
-<a href="#contact" onclick="closeMenu()">التواصل</a>
-</li>
+      <li>
+        <a href="#author" onclick="closeMenu()">عن المؤلفة</a>
+      </li>
 
-</ul>
+      <li>
+        <a href="#faq" onclick="closeMenu()">الأسئلة</a>
+      </li>
 
+      <li>
+        <a href="#contact" onclick="closeMenu()">التواصل</a>
+      </li>
 
-</nav>
+    </ul>
+
+  </nav>
 
 </header>
+
 
 
 
@@ -754,6 +833,8 @@ grid-template-columns:1fr;
 
 
 
+<div class="hero-actions">
+
 <a class="btn"
 href="https://payhip.com/b/cELCk"
 target="_blank"
@@ -762,6 +843,16 @@ rel="noopener noreferrer">
 🛒 احصل على الكتاب الآن
 
 </a>
+
+
+
+</div>
+
+<div class="hero-badges">
+<span class="hero-badge">📘 دليل عملي</span>
+<span class="hero-badge">✅ مناسب للمبتدئين والمديرين</span>
+<span class="hero-badge">⚡ جاهز للتطبيق</span>
+</div>
 
 
 </div>
@@ -1083,6 +1174,439 @@ onclick="openAccordion(this)">
 
 
 
+<!-- ===== الإنجازات ===== -->
+
+<section id="achievements">
+
+
+<div class="accordion active">
+
+
+<div class="accordion-title">
+
+🏆 الإنجازات والخبرة
+
+</div>
+
+
+
+<div class="accordion-content">
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h2>
+10+
+</h2>
+
+سنوات من الخبرة العملية في خدمة العملاء وتطوير الخدمات
+
+</div>
+
+
+
+<div class="card">
+
+<h2>
+12+
+</h2>
+
+مشروع تطوير لأقسام وخدمات العملاء
+
+</div>
+
+
+
+
+<div class="card">
+
+<h2>
+متعددة
+</h2>
+
+قطاعات تم تطوير أنظمة الخدمة وتحسين تجربة عملائها
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+ 
+
+ <!-- ===== آراء العملاء ===== -->
+
+<section id="opinions">
+
+
+<div class="accordion active">
+
+
+<div class="accordion-title"
+onclick="openAccordion(this)">
+
+
+💬 آراء العملاء والزملاء
+
+
+<span class="icon">
++
+</span>
+
+
+</div>
+
+
+
+
+<div class="accordion-content">
+
+
+<div class="cards">
+
+
+<div class="card">
+
+⭐ ⭐ ⭐ ⭐ ⭐
+
+<br><br>
+
+"كتاب عملي ومتميز، يقدم خطوات واضحة لبناء قسم خدمة عملاء احترافي، ويجمع بين الجانب النظري والتطبيق العملي."
+
+<br><br>
+
+<strong>
+مدير تطوير خدمات
+</strong>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+⭐ ⭐ ⭐ ⭐ ⭐
+
+<br><br>
+
+"تميزت أمل في تقديم حلول عملية ساعدت على تطوير إجراءات العمل وتحسين تجربة العميل داخل المؤسسة."
+
+<br><br>
+
+<strong>
+قائد فريق خدمة عملاء
+</strong>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+⭐ ⭐ ⭐ ⭐ ⭐
+
+<br><br>
+
+"منهجية واضحة ومحتوى غني يساعد المدراء والموظفين على رفع جودة الخدمة وتحقيق رضا العملاء."
+
+<br><br>
+
+<strong>
+متخصص تجربة عميل
+</strong>
+
+
+</div>
+
+
+
+</div>
+
+
+
+<br><br>
+
+
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;align-items:center;">
+
+<a class="btn" style="width:100%;max-width:280px;text-align:center;"
+href="https://example.com/customer-reviews"
+target="_blank"
+rel="noopener noreferrer">
+⭐ مشاهدة جميع التقييمات
+</a>
+
+<a class="btn" style="width:100%;max-width:280px;text-align:center;"
+href="https://search.google.com/local/writereview?placeid=YOUR_PLACE_ID"
+target="_blank"
+rel="noopener noreferrer">
+✍️ أضف تقييمك على Google
+</a>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+<!-- ===== نماذج من الكتاب ===== -->
+
+
+<section id="samples">
+
+
+<div class="accordion">
+
+
+<div class="accordion-title"
+onclick="openAccordion(this)">
+
+
+📖 نماذج من محتوى الكتاب
+
+
+<span class="icon">
++
+</span>
+
+
+</div>
+
+
+
+
+<div class="accordion-content">
+
+
+<p>
+
+اطّلع على مقتطفات مختارة من الكتاب للتعرف على المنهج العملي المستخدم في بناء وإدارة خدمة العملاء.
+
+</p>
+
+
+<br>
+
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+
+<img
+
+src="book-sample-1.webp"
+
+loading="lazy"
+
+width="300"
+
+height="400"
+
+alt="نموذج من كتاب خدمة العملاء">
+
+
+<br><br>
+
+
+<strong>
+بناء الهيكل التنظيمي لخدمة العملاء
+</strong>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+
+<img
+
+src="book-sample-2.webp"
+
+loading="lazy"
+
+width="300"
+
+height="400"
+
+alt="صفحة من كتاب خدمة العملاء">
+
+
+<br><br>
+
+
+<strong>
+تصميم السياسات والإجراءات التشغيلية
+</strong>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img
+
+src="book-sample-3.webp"
+
+loading="lazy"
+
+width="300"
+
+height="400"
+
+alt="محتوى كتاب خدمة العملاء">
+
+
+<br><br>
+
+
+<strong>
+قياس جودة الخدمة وتجربة العميل
+</strong>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<section id="services">
+
+
+<div class="accordion">
+
+
+<div class="accordion-title"
+onclick="openAccordion(this)">
+
+
+💼 خدماتي
+
+
+<span class="icon">+</span>
+
+
+</div>
+
+
+
+<div class="accordion-content">
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+استشارات خدمة العملاء
+</h3>
+
+تحليل الوضع الحالي ووضع خطط التطوير.
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+بناء أقسام خدمة العملاء
+</h3>
+
+تأسيس الهيكل والإجراءات ونماذج العمل.
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+تطوير السياسات والإجراءات
+</h3>
+
+تصميم الأدلة التشغيلية وتحسين دورة العمل.
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+تدريب فرق خدمة العملاء
+</h3>
+
+رفع مهارات التواصل وتحسين جودة الأداء.
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
 <div class="accordion-content">
 
 
@@ -1175,7 +1699,7 @@ onclick="openAccordion(this)">
 <div class="accordion-content">
 
 
-<p>
+ <p>
 
 <strong>
 أمل رزق القارح
@@ -1183,12 +1707,15 @@ onclick="openAccordion(this)">
 
 <br><br>
 
-
-متخصصة في تطوير وإدارة أقسام خدمة العملاء، وبناء الأنظمة التشغيلية وتصميم الأدلة الإجرائية وتطوير فرق العمل.
+متخصصة في تطوير وإدارة أقسام خدمة العملاء، تمتلك خبرة عملية تزيد عن عشر سنوات في تأسيس الأنظمة التشغيلية، وتصميم الأدلة الإجرائية، وبناء وتطوير فرق العمل في قطاعات التجزئة والخدمات وعيادات التجميل.
 
 <br><br>
 
-تهدف المؤلفة إلى تحويل خدمة العملاء من وظيفة تقليدية إلى تجربة احترافية تحقق رضا العميل ونمو الأعمال.
+ساهمت في تأسيس وتطوير عدد من أقسام خدمة العملاء في منشآت متنوعة، من خلال تطبيق أفضل الممارسات العالمية، وتحسين الإجراءات التشغيلية، ورفع مؤشرات رضا العملاء، وتعزيز جودة الخدمات المقدمة.
+
+<br><br>
+
+تركّز المؤلفة على بناء بيئات عمل مستدامة وترسيخ ثقافة خدمة العملاء داخل المؤسسات، من خلال تقديم منهجيات وحلول عملية تساعد القادة والموظفين على تطوير الأداء وتحقيق تجربة عميل استثنائية.
 
 </p>
 
@@ -1416,54 +1943,38 @@ rel="noopener noreferrer">
 
 <script>
 
-
 function openAccordion(element){
+  let current = element.parentElement;
 
+  document.querySelectorAll(".accordion").forEach(item=>{
+    if(item!==current){
+      item.classList.remove("active");
+      let icon = item.querySelector(".icon");
+      if(icon) icon.innerHTML = "+";
+    }
+  });
 
-let current =
-element.parentElement;
+  current.classList.toggle("active");
 
-
-document.querySelectorAll(".accordion")
-.forEach(item=>{
-
-
-if(item!==current){
-
-item.classList.remove("active");
-
-
-item.querySelector(".icon").innerHTML="+";
-
-
+  let icon = current.querySelector(".icon");
+  if(icon){
+    icon.innerHTML = current.classList.contains("active") ? "−" : "+";
+  }
 }
 
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("visible");
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
 
+document.querySelectorAll(".accordion, .card, .hero-container").forEach(el => {
+  el.classList.add("reveal");
+  revealObserver.observe(el);
 });
-
-
-
-current.classList.toggle("active");
-
-
-
-let icon =
-current.querySelector(".icon");
-
-
-icon.innerHTML =
-current.classList.contains("active")
-?
-"−"
-:
-"+";
-
-
-}
-
-
-
-
 
 function toggleMenu(){
 
