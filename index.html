@@ -9,17 +9,11 @@
 
 
 <title>
-كتاب الدليل العلمي لإنشاء وإدارة خدمة العملاء - أمل رزق القارح
+أمل  رزق القارح | كتاب الدليل العلمي لإنشاء وإدارة خدمة العملاء
 </title>
 
 
-<meta name="description"
-content="
-كتاب الدليل العلمي لإنشاء وإدارة خدمة العملاء
-لأمل رزق القارح.
-دليل عملي لبناء أقسام خدمة العملاء وتحسين تجربة العميل ورفع جودة الأداء المؤسسي.
-">
-
+<meta name="description" content="الدليل العلمي لإنشاء وإدارة خدمة العملاء للمؤلفة أمل رزقالقارح. تعرف على الكتاب، نبذة عن المؤلفة، وطريقة شراء النسخة الإلكترونية.">
 
 <meta name="keywords"
 content="
@@ -450,6 +444,61 @@ overflow:hidden;
 }
 
 
+.contact-buttons{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:14px;
+
+margin-top:18px;
+
+}
+
+
+.contact-buttons .btn{
+
+width:100%;
+
+max-width:220px;
+
+padding:14px 22px;
+
+border-radius:14px;
+
+font-size:16px;
+
+justify-content:center;
+
+}
+
+
+.contact-buttons .btn:hover,
+
+.contact-buttons .btn:focus-visible{
+
+transform:translateY(-2px);
+
+}
+
+
+.faq-item{
+
+padding:8px 0;
+
+}
+
+
+.faq-item h3{
+
+color:#0f3d91;
+
+margin-bottom:6px;
+
+}
+
+
 
 .accordion-title{
 
@@ -661,15 +710,171 @@ color:white;
 
 
 
-footer{
+.main-footer{
 
-background:#071426;
+background:linear-gradient(135deg,#071426 0%,#0f3d91 100%);
 
-color:white;
+color:#f8fafc;
 
-padding:35px;
+padding:40px 20px 28px;
 
-text-align:center;
+border-top:1px solid rgba(255,255,255,.12);
+
+margin-top:60px;
+
+}
+
+
+
+.main-footer .footer-container{
+
+max-width:1200px;
+
+margin:0 auto;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:24px;
+
+flex-wrap:wrap;
+
+padding-bottom:24px;
+
+border-bottom:1px solid rgba(255,255,255,.14);
+
+}
+
+
+
+.footer-brand h3{
+
+font-size:22px;
+
+color:#ffffff;
+
+margin-bottom:8px;
+
+}
+
+
+
+.footer-brand p{
+
+color:#cbd5e1;
+
+max-width:420px;
+
+}
+
+
+
+.footer-social{
+
+display:flex;
+
+gap:12px;
+
+align-items:center;
+
+}
+
+
+
+.footer-social a{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+width:46px;
+
+height:46px;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(6px);
+
+transition:transform .25s ease, background .25s ease;
+
+}
+
+
+
+.footer-social a:hover,
+
+.footer-social a:focus-visible{
+
+transform:translateY(-2px);
+
+background:rgba(255,255,255,.2);
+
+}
+
+
+
+.footer-social img{
+
+width:22px;
+
+height:22px;
+
+filter:brightness(0) invert(1);
+
+}
+
+
+
+.footer-bottom{
+
+max-width:1200px;
+
+margin:0 auto;
+
+padding-top:20px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:16px;
+
+flex-wrap:wrap;
+
+font-size:15px;
+
+color:#e2e8f0;
+
+}
+
+
+
+.footer-bottom a{
+
+color:#fbbf24;
+
+text-decoration:none;
+
+font-weight:700;
+
+}
+
+
+
+.footer-bottom a:hover,
+
+.footer-bottom a:focus-visible{
+
+color:#fde68a;
 
 }
 
@@ -683,6 +888,52 @@ text-align:center;
 .menu-icon{
 
 display:block;
+
+}
+
+
+.contact-buttons{
+
+flex-direction:column;
+
+align-items:stretch;
+
+}
+
+
+.contact-buttons .btn{
+
+max-width:none;
+
+}
+
+
+
+.main-footer{
+
+padding:32px 16px 24px;
+
+}
+
+
+
+.main-footer .footer-container,
+
+.footer-bottom{
+
+flex-direction:column;
+
+text-align:center;
+
+justify-content:center;
+
+}
+
+
+
+.footer-social{
+
+justify-content:center;
 
 }
 
@@ -795,7 +1046,7 @@ display:flex;
       </li>
 
       <li>
-        <a href="#content" onclick="closeMenu()">عن الكتاب</a>
+        <a href="#content" onclick="closeMenu(); return true;">عن الكتاب</a>
       </li>
 
       <li>
@@ -865,10 +1116,9 @@ display:flex;
 المرجع العملي لبناء قسم خدمة عملاء احترافي،
 وتطوير تجربة العميل،
 وتحقيق التميز المؤسسي.
-
+للمؤلفة أمل رزق القارح
 </p>
-
-
+ 
 
 <div class="hero-actions">
 
@@ -960,16 +1210,14 @@ onclick="openAccordion(this)">
 <div class="accordion-content">
 
 
-<p>
-
-يقدم كتاب
-<strong>
-الدليل العلمي لإنشاء وإدارة خدمة العملاء
-</strong>
-
-منهجًا متكاملًا يساعد المؤسسات على تأسيس أقسام خدمة العملاء بطريقة احترافية، بداية من التخطيط وبناء الهيكل التنظيمي، مرورًا بالإجراءات التشغيلية، وانتهاء بقياس الأداء وتحسين تجربة العميل.
-
+ <p>
+يُعد كتاب 
+<strong>الدليل العلمي لإنشاء وإدارة خدمة العملاء</strong> 
+مرجعًا عمليًا شاملاً لكل مؤسسة تسعى إلى بناء قسم خدمة عملاء احترافي. 
+يجمع الكتاب بين الخبرة الميدانية والنماذج التطبيقية، ويقدّم خطوات واضحة تبدأ من التخطيط وبناء الهيكل التنظيمي، مرورًا بالإجراءات التشغيلية اليومية، وصولًا إلى قياس الأداء وتحسين تجربة العميل. 
+إنه دليل استراتيجي يساعد المؤسسات على تحويل خدمة العملاء إلى ميزة تنافسية مستدامة.
 </p>
+
 
 
 </div>
@@ -1003,34 +1251,23 @@ onclick="openAccordion(this)">
 <div class="accordion-content">
 
 
-<ul>
-
-<li>
-إنشاء قسم خدمة عملاء من الصفر.
-</li>
-
-
-<li>
-تطوير أداء الموظفين.
-</li>
-
-
-<li>
-إدارة الشكاوى بطريقة احترافية.
-</li>
-
-
-<li>
-رفع رضا العملاء.
-</li>
+ 
+ 
+  <p>
+    إذا كنت تسعى إلى بناء تجربة عميل احترافية داخل مؤسستك، فهذا الكتاب هو دليلك العملي لتحقيق ذلك. 
+    فهو يزوّدك بالخطوات والأدوات اللازمة لتحويل خدمة العملاء إلى عنصر استراتيجي يرفع قيمة مؤسستك ويعزز قدرتها على المنافسة.
+  </p>
+  <ul>
+    <li>إنشاء قسم خدمة عملاء من الصفر.</li>
+    <li>تطوير أداء الموظفين.</li>
+    <li>إدارة الشكاوى بطريقة احترافية.</li>
+    <li>رفع رضا العملاء.</li>
+    <li>تحويل الخدمة إلى ميزة تنافسية.</li>
+  </ul>
+ 
 
 
-<li>
-تحويل الخدمة إلى ميزة تنافسية.
-</li>
-
-
-</ul>
+ 
 
 
 </div>
@@ -1043,66 +1280,27 @@ onclick="openAccordion(this)">
 
 
 
+ <div class="accordion">
 
+  <div class="accordion-title" onclick="openAccordion(this)">
+    📚 ماذا ستتعلم من الكتاب؟
+    <span class="icon">+</span>
+  </div>
 
-
-<div class="accordion">
-
-
-<div class="accordion-title"
-onclick="openAccordion(this)">
-
-
-📚 ماذا ستتعلم من الكتاب؟
-
-<span class="icon">
-+
-</span>
-
-
-</div>
-
-
-
-<div class="accordion-content">
-
-
-<ul>
-
-<li>
-أساسيات بناء إدارة خدمة العملاء.
-</li>
-
-
-<li>
-تصميم السياسات والإجراءات.
-</li>
-
-
-<li>
-إدارة الشكاوى والمتابعة.
-</li>
-
-
-<li>
-قياس مؤشرات الأداء KPI.
-</li>
-
-
-<li>
-تطوير تجربة العميل.
-</li>
-
-
-</ul>
-
+  <div class="accordion-content">
+    <p>
+      هذا الكتاب يزوّدك بالمعرفة والأدوات العملية التي تحتاجها لتأسيس قسم خدمة عملاء احترافي وتحويل تجربة العميل إلى ميزة تنافسية مستدامة. 
+    </p>
+    <ul>
+      <li>أساسيات بناء إدارة خدمة العملاء.</li>
+      <li>تصميم السياسات والإجراءات التشغيلية.</li>
+      <li>إدارة الشكاوى والمتابعة باحترافية.</li>
+      <li>قياس مؤشرات الأداء <strong>KPI</strong> وتحليل النتائج.</li>
+      <li>تطوير تجربة العميل وتعزيز ولائه للمؤسسة.</li>
+    </ul>
+  </div>
 
 </div>
-
-
-</div>
-
-
 
 
 
@@ -1186,99 +1384,73 @@ onclick="openAccordion(this)">
 
 
 
+ <section>
 
+  <div class="accordion">
 
+    <div class="accordion-title" onclick="openAccordion(this)">
+      ⭐ مميزات الكتاب
+      <span class="icon">+</span>
+    </div>
 
-<section>
+    <div class="accordion-content">
+      <p>
+        يتميز كتاب <strong>الدليل العلمي لإنشاء وإدارة خدمة العملاء</strong> بأنه يجمع بين الجانب النظري والخبرة العملية، 
+        ويقدّم حلولًا تطبيقية تساعد المؤسسات على تحويل خدمة العملاء إلى ميزة تنافسية استراتيجية.
+      </p>
+      <ul>
+        <li>خطوات عملية واضحة لبناء قسم خدمة العملاء.</li>
+        <li>نماذج وأدلة تشغيلية جاهزة للاستخدام.</li>
+        <li>أمثلة واقعية ودراسات حالة عربية وعالمية.</li>
+        <li>تركيز على التكنولوجيا الحديثة مثل الذكاء الاصطناعي وCRM.</li>
+        <li>أدوات قياس الأداء وتحسين تجربة العميل بشكل مستدام.</li>
+      </ul>
+    </div>
 
-
-<div class="accordion">
-
-
-<div class="accordion-title"
-onclick="openAccordion(this)">
-
-
-⭐ مميزات الكتاب
-
-
-<span class="icon">
-+
-</span>
-
-
-</div>
-
-
-
-<!-- ===== الإنجازات ===== -->
-
-<section id="achievements">
-
-
-<div class="accordion active">
-
-
-<div class="accordion-title">
-
-🏆 الإنجازات والخبرة
-
-</div>
-
-
-
-<div class="accordion-content">
-
-
-<div class="cards">
-
-
-<div class="card">
-
-<h2>
-10+
-</h2>
-
-سنوات من الخبرة العملية في خدمة العملاء وتطوير الخدمات
-
-</div>
-
-
-
-<div class="card">
-
-<h2>
-12+
-</h2>
-
-مشروع تطوير لأقسام وخدمات العملاء
-
-</div>
-
-
-
-
-<div class="card">
-
-<h2>
-متعددة
-</h2>
-
-قطاعات تم تطوير أنظمة الخدمة وتحسين تجربة عملائها
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
+  </div>
 
 </section>
+
+
+
+ <!-- ===== الإنجازات ===== -->
+<section id="achievements">
+
+  <div class="accordion">
+
+    <div class="accordion-title" onclick="openAccordion(this)">
+      🏆 الإنجازات والخبرة
+      <span class="icon">+</span>
+    </div>
+
+    <div class="accordion-content">
+
+      <div class="cards">
+
+        <div class="card">
+          <h2>10+</h2>
+          <p>سنوات من الخبرة العملية في خدمة العملاء وتطوير الأنظمة التشغيلية.</p>
+        </div>
+
+        <div class="card">
+          <h2>12+</h2>
+          <p>مشروع ناجح لتطوير أقسام وخدمات العملاء في قطاعات متنوعة.</p>
+        </div>
+
+        <div class="card">
+          <h2>متعددة</h2>
+          <p>قطاعات تم تحسين تجربة عملائها عبر حلول عملية مبتكرة.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
 
  
 
@@ -1380,24 +1552,26 @@ onclick="openAccordion(this)">
 
 <br><br>
 
+ <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;align-items:center;">
 
-<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;align-items:center;">
+  <a class="btn" 
+     style="flex:1 1 160px;max-width:180px;padding:8px 12px;font-size:14px;border-radius:6px;text-align:center;background:#001f3f;color:#fff;text-decoration:none;transition:0.3s;"
+     href="https://example.com/customer-reviews"
+     target="_blank" rel="noopener noreferrer">
+      التقييمات
+  </a>
 
-<a class="btn" style="width:100%;max-width:280px;text-align:center;"
-href="https://example.com/customer-reviews"
-target="_blank"
-rel="noopener noreferrer">
-⭐ مشاهدة جميع التقييمات
-</a>
-
-<a class="btn" style="width:100%;max-width:280px;text-align:center;"
-href="https://search.google.com/local/writereview?placeid=YOUR_PLACE_ID"
-target="_blank"
-rel="noopener noreferrer">
-✍️ أضف تقييمك على Google
-</a>
+  <a class="btn" 
+     style="flex:1 1 160px;max-width:180px;padding:8px 12px;font-size:14px;border-radius:6px;text-align:center;background:#001f3f;color:#fff;text-decoration:none;transition:0.3s;"
+     href="https://search.google.com/local/writereview?placeid=YOUR_PLACE_ID"
+     target="_blank" rel="noopener noreferrer">
+       أضف تقييم
+  </a>
 
 </div>
+
+
+
 
 
 
@@ -1551,92 +1725,41 @@ onclick="openLightbox(this.src, this.alt)">
 
 </section>
 
+ <section id="services">
+  <div class="accordion">
+    <div class="accordion-title" onclick="openAccordion(this)">
+      💼 خدماتي
+      <span class="icon">+</span>
+    </div>
 
+    <div class="accordion-content">
+      <div class="cards">
 
-<section id="services">
+        <div class="card">
+          <h3>💡 استشارات خدمة العملاء</h3>
+          <p>تحليل الوضع الحالي ووضع خطط التطوير.</p>
+        </div>
 
+        <div class="card">
+          <h3>🏢 بناء أقسام خدمة العملاء</h3>
+          <p>تأسيس الهيكل والإجراءات ونماذج العمل.</p>
+        </div>
 
-<div class="accordion">
+        <div class="card">
+          <h3>📑 تطوير السياسات والإجراءات</h3>
+          <p>تصميم الأدلة التشغيلية وتحسين دورة العمل.</p>
+        </div>
 
+        <div class="card">
+          <h3>🎓 تدريب فرق خدمة العملاء</h3>
+          <p>رفع مهارات التواصل وتحسين جودة الأداء.</p>
+        </div>
 
-<div class="accordion-title"
-onclick="openAccordion(this)">
-
-
-💼 خدماتي
-
-
-<span class="icon">+</span>
-
-
-</div>
-
-
-
-<div class="accordion-content">
-
-
-<div class="cards">
-
-
-<div class="card">
-
-<h3>
-استشارات خدمة العملاء
-</h3>
-
-تحليل الوضع الحالي ووضع خطط التطوير.
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-بناء أقسام خدمة العملاء
-</h3>
-
-تأسيس الهيكل والإجراءات ونماذج العمل.
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-تطوير السياسات والإجراءات
-</h3>
-
-تصميم الأدلة التشغيلية وتحسين دورة العمل.
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-تدريب فرق خدمة العملاء
-</h3>
-
-رفع مهارات التواصل وتحسين جودة الأداء.
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
+      </div>
+    </div>
+  </div>
 </section>
+
 
 
 <div class="accordion-content">
@@ -1705,58 +1828,94 @@ onclick="openAccordion(this)">
 
 
 
+ <section id="author">
+
+  <div class="accordion">
+
+    <div class="accordion-title" onclick="openAccordion(this)">
+      ✍️ عن المؤلفة
+      <span class="icon">+</span>
+    </div>
+
+    <div class="accordion-content">
+
+      <p>
+        <strong>أمل رزق القارح</strong><br><br>
+        مستشارة متخصصة في خدمة العملاء وتحسين تجربة العميل، بخبرة عملية تتجاوز <strong>10 سنوات</strong> في تطوير الأنظمة التشغيلية، تصميم الأدلة الإجرائية، وبناء فرق عمل عالية الكفاءة في قطاعات متعددة تشمل التجزئة، الخدمات، التعليم، والرعاية الصحية.
+      </p>
+
+      <p>
+        شغلت منصب مديرة عمليات وإدارة إدارية في تشغيل المراكز الطبية وعيادات التجميل، حيث ساهمت في تأسيس وتطوير أقسام خدمة العملاء عبر تنظيم سير العمل، تحسين تجربة المراجعين، وتطوير أداء فرق الاستقبال ومراكز الاتصال بما يرفع مؤشرات رضا العملاء ويعزز جودة الخدمات المقدمة.
+      </p>
+
+      <p>
+        تركّز على بناء بيئات عمل مستدامة وترسيخ ثقافة خدمة العملاء داخل المؤسسات، من خلال حلول عملية تساعد القادة والموظفين على تطوير الأداء وتحقيق تجربة عميل استثنائية. وهي حاصلة على الشهادة المهنية <strong>SHRM</strong>، وتسعى إلى المساهمة في تطوير بيئات عمل احترافية تركز على الكفاءة التشغيلية وتنمية الكوادر البشرية.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
 
 
-<section id="author">
-
-
-<div class="accordion">
-
-
-<div class="accordion-title"
-onclick="openAccordion(this)">
-
-
-✍️ عن المؤلفة
-
-<span class="icon">
-+
-</span>
-
-
-</div>
 
 
 
-<div class="accordion-content">
+ <section id="faq">
 
+  <div class="accordion">
 
- <p>
+    <div class="accordion-title" onclick="openAccordion(this)">
+      ❓ الأسئلة الشائعة
+      <span class="icon">+</span>
+    </div>
 
-<strong>
-أمل رزق القارح
-</strong>
+    <div class="accordion-content">
 
-<br><br>
+      <div class="faq-item">
+        <h3>👶 هل الكتاب مناسب للمبتدئين؟</h3>
+        <p>نعم، يبدأ من الأساسيات ويوضح خطوات بناء وإدارة خدمة العملاء.</p>
+      </div>
 
-متخصصة في تطوير وإدارة أقسام خدمة العملاء، تمتلك خبرة عملية تزيد عن عشر سنوات في تأسيس الأنظمة التشغيلية، وتصميم الأدلة الإجرائية، وبناء وتطوير فرق العمل في قطاعات التجزئة والخدمات وعيادات التجميل.
+      <hr>
 
-<br><br>
+      <div class="faq-item">
+        <h3>👨‍💼 هل يناسب المدراء؟</h3>
+        <p>نعم، يساعد على بناء أنظمة واضحة وتحسين الأداء المؤسسي.</p>
+      </div>
 
-ساهمت في تأسيس وتطوير عدد من أقسام خدمة العملاء في منشآت متنوعة، من خلال تطبيق أفضل الممارسات العالمية، وتحسين الإجراءات التشغيلية، ورفع مؤشرات رضا العملاء، وتعزيز جودة الخدمات المقدمة.
+      <hr>
 
-<br><br>
+      <div class="faq-item">
+        <h3>🛒 كيف يمكن شراء الكتاب؟</h3>
+        <p>من خلال زر الشراء الموجود في الصفحة أو عبر المتاجر الإلكترونية.</p>
+      </div>
 
-تركّز المؤلفة على بناء بيئات عمل مستدامة وترسيخ ثقافة خدمة العملاء داخل المؤسسات، من خلال تقديم منهجيات وحلول عملية تساعد القادة والموظفين على تطوير الأداء وتحقيق تجربة عميل استثنائية.
+      <hr>
 
-</p>
+      <div class="faq-item">
+        <h3>📖 هل يحتوي الكتاب على أمثلة عملية؟</h3>
+        <p>نعم، يتضمن نماذج تطبيقية ودراسات حالة من مؤسسات عربية وعالمية.</p>
+      </div>
 
+      <hr>
 
-</div>
+      <div class="faq-item">
+        <h3>🌐 هل يناقش الكتاب التكنولوجيا الحديثة؟</h3>
+        <p>بالتأكيد، يتناول الذكاء الاصطناعي، أنظمة CRM، وروبوتات الدردشة.</p>
+      </div>
 
+      <hr>
 
-</div>
+      <div class="faq-item">
+        <h3>🎯 ما الهدف الأساسي من الكتاب؟</h3>
+        <p>تمكين المؤسسات من تحويل خدمة العملاء إلى ميزة تنافسية استراتيجية.</p>
+      </div>
 
+    </div>
+
+  </div>
 
 </section>
 
@@ -1766,128 +1925,43 @@ onclick="openAccordion(this)">
 
 
 
+ <section id="contact">
 
+  <div class="accordion">
 
-<section id="faq">
+    <div class="accordion-title" onclick="openAccordion(this)">
+      📩 التواصل والحصول على الكتاب
+      <span class="icon">+</span>
+    </div>
 
+    <div class="accordion-content">
 
-<div class="accordion">
+      <p>يمكنك الحصول على الكتاب أو الاستفسار من خلال القنوات التالية، وسنكون سعداء لخدمتكم في أسرع وقت:</p>
 
+      <div class="contact-buttons">
 
-<div class="accordion-title"
-onclick="openAccordion(this)">
+        <a class="btn"
+           href="https://wa.me/966551042008?text=السلام عليكم، أريد الاستفسار عن كتاب الدليل العلمي لخدمة العملاء"
+           target="_blank" rel="noopener noreferrer">
+          💬 واتساب
+        </a>
 
+        <a class="btn"
+           href="mailto:amal2941405@gmail.com"
+           target="_blank" rel="noopener noreferrer">
+          📧 البريد الإلكتروني
+        </a>
 
-❓ الأسئلة الشائعة
+        <a class="btn"
+           href="tel:+966551042008">
+          📞 الاتصال الهاتفي
+        </a>
 
-<span class="icon">
-+
-</span>
+      </div>
 
+    </div>
 
-</div>
-
-
-
-<div class="accordion-content">
-
-
-<h3>
-هل الكتاب مناسب للمبتدئين؟
-</h3>
-
-
-<p>
-نعم، يبدأ من الأساسيات ويوضح خطوات بناء وإدارة خدمة العملاء.
-</p>
-
-
-<hr>
-
-
-<h3>
-هل يناسب المدراء؟
-</h3>
-
-
-<p>
-نعم، يساعد على بناء أنظمة واضحة وتحسين الأداء.
-</p>
-
-
-<hr>
-
-
-<h3>
-كيف يمكن شراء الكتاب؟
-</h3>
-
-
-<p>
-من خلال زر الشراء الموجود في الصفحة.
-</p>
-
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<section id="contact">
-
-
-<div class="accordion">
-
-
-<div class="accordion-title"
-onclick="openAccordion(this)">
-
-
-📩 التواصل والحصول على الكتاب
-
-
-<span class="icon">
-+
-</span>
-
-
-</div>
-
-
-
-<div class="accordion-content">
-
-
-<a class="btn"
-
-href="https://wa.me/966551042008?text=السلام عليكم، أريد الاستفسار عن كتاب الدليل العلمي لخدمة العملاء"
-
-target="_blank"
-
-rel="noopener noreferrer">
-
-💬 واتساب
-
-</a>
-
-
-</div>
-
-
-</div>
-
+  </div>
 
 </section>
 
@@ -1943,16 +2017,64 @@ rel="noopener noreferrer">
 
 
 
-<footer>
+<footer class="main-footer">
+
+<div class="footer-container">
+
+<div class="footer-brand">
+
+<h3>
+📘 أمل رزق القارح
+</h3>
 
 <p>
-© 2026 جميع الحقوق محفوظة
+مؤلفة كتاب الدليل العلمي لإنشاء وإدارة خدمة العملاء
 </p>
 
+</div>
+
+<div class="footer-social">
+
+<a href="https://www.linkedin.com/in/amal-rizq-achrm"
+target="_blank"
+rel="noopener noreferrer"
+title="LinkedIn">
+
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+alt="LinkedIn">
+
+</a>
+
+<a href="https://www.instagram.com/amlqarih"
+target="_blank"
+rel="noopener noreferrer"
+title="Instagram">
+
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+alt="Instagram">
+
+</a>
+
+<a href="mailto:amal2941405@gmail.com"
+title="البريد الإلكتروني">
+
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/envelope.svg"
+alt="البريد الإلكتروني">
+
+</a>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
 
 <p>
+© 2026 جميع الحقوق محفوظة | أمل رزق القارح
+</p>
 
-تصميم وبرمجة:
+<p>
+تصميم وبرمجة
 
 <a href="https://wa.me/967735962962"
 target="_blank"
@@ -1964,6 +2086,7 @@ rel="noopener noreferrer">
 
 </p>
 
+</div>
 
 </footer>
 
@@ -2024,25 +2147,45 @@ function closeLightbox(){
 
 function toggleMenu(){
 
-
-document
-.getElementById("menu")
-.classList.toggle("active");
-
+  document
+  .getElementById("menu")
+  .classList.toggle("active");
 
 }
-
-
 
 function closeMenu(){
 
-
-document
-.getElementById("menu")
-.classList.remove("active");
-
+  document
+  .getElementById("menu")
+  .classList.remove("active");
 
 }
+
+function scrollToSection(sectionId){
+  const section = document.getElementById(sectionId);
+
+  if (!section) return;
+
+  const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+  const targetPosition = section.getBoundingClientRect().top + window.pageYOffset - headerHeight - 12;
+
+  window.scrollTo({
+    top: targetPosition,
+    behavior: 'smooth'
+  });
+}
+
+document.querySelectorAll('.nav-links a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function (event) {
+    const targetId = this.getAttribute('href')?.slice(1);
+
+    if (!targetId) return;
+
+    event.preventDefault();
+    closeMenu();
+    scrollToSection(targetId);
+  });
+});
 
 
 
