@@ -546,6 +546,43 @@ display:grid;
 	object-fit:cover;
 	border-radius:15px;
 	box-shadow:0 8px 20px #0002;
+	cursor:pointer;
+}
+
+.lightbox{
+	position:fixed;
+	inset:0;
+	background:rgba(2,8,23,.86);
+	display:none;
+	align-items:center;
+	justify-content:center;
+	padding:20px;
+	z-index:2000;
+}
+
+.lightbox.active{
+	display:flex;
+}
+
+.lightbox img{
+	max-width:100%;
+	max-height:90vh;
+	border-radius:20px;
+	box-shadow:0 20px 50px rgba(0,0,0,.35);
+}
+
+.lightbox .close{
+	position:absolute;
+	top:20px;
+	right:20px;
+	background:#fff;
+	color:#111;
+	border:none;
+	width:44px;
+	height:44px;
+	border-radius:50%;
+	font-size:22px;
+	cursor:pointer;
 }
 
 .card h2,
@@ -851,7 +888,7 @@ rel="noopener noreferrer">
 <div class="hero-badges">
 <span class="hero-badge">📘 دليل عملي</span>
 <span class="hero-badge">✅ مناسب للمبتدئين والمديرين</span>
-<span class="hero-badge">⚡ جاهز للتطبيق</span>
+
 </div>
 
 
@@ -1429,15 +1466,13 @@ width="300"
 
 height="400"
 
-alt="نموذج من كتاب خدمة العملاء">
+alt="نموذج من كتاب خدمة العملاء"
+onclick="openLightbox(this.src, this.alt)">
 
 
 <br><br>
 
 
-<strong>
-بناء الهيكل التنظيمي لخدمة العملاء
-</strong>
 
 
 </div>
@@ -1460,15 +1495,14 @@ width="300"
 
 height="400"
 
-alt="صفحة من كتاب خدمة العملاء">
+alt="صفحة من كتاب خدمة العملاء"
+onclick="openLightbox(this.src, this.alt)">
 
 
 <br><br>
 
 
-<strong>
-تصميم السياسات والإجراءات التشغيلية
-</strong>
+
 
 
 </div>
@@ -1492,15 +1526,13 @@ width="300"
 
 height="400"
 
-alt="محتوى كتاب خدمة العملاء">
+alt="محتوى كتاب خدمة العملاء"
+onclick="openLightbox(this.src, this.alt)">
 
 
 <br><br>
 
 
-<strong>
-قياس جودة الخدمة وتجربة العميل
-</strong>
 
 
 </div>
@@ -1935,11 +1967,10 @@ rel="noopener noreferrer">
 
 </footer>
 
-
-
-
-
-
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="close" onclick="event.stopPropagation(); closeLightbox()">✕</button>
+  <img id="lightboxImage" src="" alt="">
+</div>
 
 <script>
 
@@ -1975,6 +2006,21 @@ document.querySelectorAll(".accordion, .card, .hero-container").forEach(el => {
   el.classList.add("reveal");
   revealObserver.observe(el);
 });
+
+function openLightbox(src, alt){
+  const lightbox = document.getElementById('lightbox');
+  const image = document.getElementById('lightboxImage');
+  image.src = src;
+  image.alt = alt;
+  lightbox.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox(){
+  const lightbox = document.getElementById('lightbox');
+  lightbox.classList.remove('active');
+  document.body.style.overflow = '';
+}
 
 function toggleMenu(){
 
